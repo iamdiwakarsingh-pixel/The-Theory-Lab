@@ -27,7 +27,7 @@ export default function Home() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
           >
-            <h2 className="text-primary font-medium tracking-widest uppercase text-sm mb-4">
+            <h2 className="text-primary font-bold tracking-widest uppercase text-base mb-4">
               Academic Portfolio
             </h2>
             <h1 className="text-5xl md:text-7xl font-serif font-bold text-foreground mb-6 leading-tight">
@@ -35,9 +35,6 @@ export default function Home() {
             </h1>
             <p className="text-xl md:text-2xl text-muted-foreground font-light mb-8 font-serif italic">
               {personalInfo.title}
-            </p>
-            <p className="text-lg text-foreground/80 mb-10 max-w-2xl mx-auto leading-relaxed">
-              {personalInfo.subtitle}
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
