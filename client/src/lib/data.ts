@@ -13,7 +13,7 @@ import {
 export const personalInfo = {
   name: "Dr. Diwakar Singh",
   title: "Researcher | Educator | Former Indian Air Force Officer",
-  subtitle: "Scholar of Social Entrepreneurship & Indigenous Management",
+  subtitle: "Assistant Professor, Entrepreneurship Development Institute of India, Ahmedabad",
   email: "iamdiwakarsingh@gmail.com",
   socials: {
     googleScholar: "https://scholar.google.com/citations?user=MhNKED8AAAAJ&hl=en",
