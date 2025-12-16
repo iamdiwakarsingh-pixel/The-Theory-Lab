@@ -6,8 +6,7 @@ import runtimeErrorOverlay from "@replit/vite-plugin-runtime-error-modal";
 import { metaImagesPlugin } from "./vite-plugin-meta-images";
 
 export default defineConfig({
- base: '/The-Theory-Lab/', // <-- ADD THIS LINE HERE
-  plugins: [
+   plugins: [
     react(),
     runtimeErrorOverlay(),
     tailwindcss(),
