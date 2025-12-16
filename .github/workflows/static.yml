@@ -34,7 +34,7 @@ jobs:
         run: npm install
       - name: Build
         # Run the custom build command using PUBLIC_URL environment variable
-        run: PUBLIC_URL=/The-Theory-Lab/ npm run build
+        run:  npm run build
       - name: Setup Pages
         uses: actions/configure-pages@v4
       - name: Upload artifact
