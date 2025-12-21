@@ -67,7 +67,7 @@ export default function Teaching() {
               <Card className="bg-gray-50/50 border-gray-100">
                 <CardHeader>
                   <CardTitle className="flex items-center gap-2 text-slate-700 font-serif">
-                    <Mic className="w-5 h-5" /> Executive Ed
+                    <Mic className="w-5 h-5" /> Executive Training
                   </CardTitle>
                 </CardHeader>
                 <CardContent>
