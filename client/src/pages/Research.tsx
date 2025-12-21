@@ -5,6 +5,7 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { FileText, Book, Presentation } from "lucide-react";
+import { Link } from "wouter";
 
 export default function Research() {
   return (
@@ -165,33 +166,21 @@ export default function Research() {
                 </Tabs>
               </div>
 
-              {/* Sidebar: Projects */}
+              {/* Sidebar: View Projects Page */}
               <div className="lg:col-span-1">
-                <h2 className="text-2xl font-bold text-secondary mb-8 flex items-center gap-2">
-                  <Presentation className="w-6 h-6 text-primary" /> Projects
-                </h2>
-                
-                <div className="space-y-6">
-                  {projects.map((project, i) => (
-                    <Card key={i} className="bg-white border-orange-100 hover:shadow-md transition-all group">
-                      <CardHeader className="pb-3">
-                        <CardTitle className="text-lg font-bold text-secondary group-hover:text-primary transition-colors">
-                          {project.title}
-                        </CardTitle>
-                        <CardDescription>
-                          <Badge variant="secondary" className="bg-orange-50 text-orange-700 hover:bg-orange-100 border-none mt-2">
-                            {project.role}
-                          </Badge>
-                        </CardDescription>
-                      </CardHeader>
-                      <CardContent>
-                        <p className="text-base text-muted-foreground leading-relaxed">
-                          {project.description}
-                        </p>
-                      </CardContent>
-                    </Card>
-                  ))}
-                </div>
+                <Link href="/projects">
+                  <Card className="bg-gradient-to-br from-primary/10 to-accent/10 border-primary/20 hover:shadow-lg transition-all cursor-pointer h-full">
+                    <CardHeader className="text-center py-12">
+                      <div className="flex justify-center mb-4">
+                        <Presentation className="w-12 h-12 text-primary" />
+                      </div>
+                      <CardTitle className="text-2xl text-primary">View All Projects</CardTitle>
+                      <p className="text-sm text-muted-foreground mt-4">
+                        Explore detailed information about my research engagements and consulting projects.
+                      </p>
+                    </CardHeader>
+                  </Card>
+                </Link>
               </div>
             </div>
 

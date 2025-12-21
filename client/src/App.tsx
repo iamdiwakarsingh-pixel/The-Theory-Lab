@@ -8,6 +8,7 @@ import Home from "@/pages/Home";
 import About from "@/pages/About";
 import Research from "@/pages/Research";
 import Teaching from "@/pages/Teaching";
+import Projects from "@/pages/Projects";
 import Contact from "@/pages/Contact";
 
 // No changes needed in this function definition
@@ -18,6 +19,7 @@ function RouterComponent() {
       <Route path="/about" component={About} />
       <Route path="/research" component={Research} />
       <Route path="/teaching" component={Teaching} />
+      <Route path="/projects" component={Projects} />
       <Route path="/contact" component={Contact} />
       <Route component={NotFound} />
     </Switch>
