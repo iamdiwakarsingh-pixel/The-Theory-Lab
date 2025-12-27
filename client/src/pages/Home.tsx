@@ -1,7 +1,7 @@
 import { Layout } from "@/components/layout";
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
-import { ArrowRight, Download } from "lucide-react";
+import { ArrowRight, Download, ExternalLink } from "lucide-react";
 import { Link } from "wouter";
 import heroBg from "@assets/generated_images/clean_spiritual_abstract_geometry_background.png";
 import { personalInfo } from "@/lib/data";
@@ -27,9 +27,19 @@ export default function Home() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
           >
-            <h2 className="text-primary font-bold tracking-widest uppercase text-base mb-4">
-              Academic Portfolio
-            </h2>
+            {/* Profile Photo */}
+            <motion.div
+              initial={{ opacity: 0, scale: 0.95 }}
+              animate={{ opacity: 1, scale: 1 }}
+              transition={{ duration: 0.8, delay: 0.2 }}
+              className="mb-8 flex justify-center"
+            >
+              <img
+                src="/diwakar-profile.jpg"
+                alt="Dr. Diwakar Singh"
+                className="w-40 h-48 object-cover rounded-lg shadow-lg border-4 border-primary/20"
+              />
+            </motion.div>
             <h1 className="text-5xl md:text-7xl font-serif font-bold text-foreground mb-6 leading-tight">
               {personalInfo.name}
             </h1>
@@ -46,6 +56,20 @@ export default function Home() {
               <a href="/Dr_Diwakar_Singh_CV.pdf" download="Dr_Diwakar_Singh_CV.pdf">
                 <Button variant="outline" size="lg" className="rounded-full px-8 text-lg h-14 border-primary/20 hover:bg-orange-50 text-primary">
                   Download CV <Download className="ml-2 w-5 h-5" />
+                </Button>
+              </a>
+            </div>
+
+            {/* Research Profiles */}
+            <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
+              <a href={personalInfo.socials.googleScholar} target="_blank" rel="noopener noreferrer">
+                <Button variant="ghost" size="sm" className="text-primary hover:text-primary hover:bg-orange-50 gap-2">
+                  Google Scholar <ExternalLink className="w-4 h-4" />
+                </Button>
+              </a>
+              <a href={personalInfo.socials.researchGate} target="_blank" rel="noopener noreferrer">
+                <Button variant="ghost" size="sm" className="text-secondary hover:text-secondary hover:bg-blue-50 gap-2">
+                  ResearchGate <ExternalLink className="w-4 h-4" />
                 </Button>
               </a>
             </div>
