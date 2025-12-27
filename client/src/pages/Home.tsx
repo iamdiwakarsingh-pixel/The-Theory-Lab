@@ -37,7 +37,7 @@ export default function Home() {
               <img
                 src="/diwakar-profile.jpg"
                 alt="Dr. Diwakar Singh"
-                className="w-40 h-48 object-cover rounded-lg shadow-lg border-4 border-primary/20"
+                className="w-40 h-48 object-cover rounded-full shadow-lg border-4 border-primary/20"
               />
             </motion.div>
             <h1 className="text-5xl md:text-7xl font-serif font-bold text-foreground mb-6 leading-tight">
